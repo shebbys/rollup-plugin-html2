@@ -192,9 +192,6 @@ const html2 = ({ template, file: deprecatedFileOption, fileName: htmlFileName, i
             script: true,
             style: true,
         });
-        if (!doc.valid) {
-            this.error('Error parsing template');
-        }
         const html = doc.querySelector('html');
         if (!html) {
             this.error('The input template doesn\'t contain the `html` tag');
