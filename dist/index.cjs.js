@@ -198,7 +198,6 @@ const html2 = ({ template, file: deprecatedFileOption, fileName: htmlFileName, i
         if (!html) {
             this.error('The input template doesn\'t contain the `html` tag');
         }
-        const html = doc.querySelector('html');
         const head = getChildElement(html, 'head', false);
         const body = getChildElement(html, 'body');
         if (meta) {
