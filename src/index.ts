@@ -283,14 +283,14 @@ const html2: RollupPluginHTML2 = ({
       script: true,
       style: true,
     }) as HTMLElement & {valid: boolean}
-    if (!doc.valid) {
-      this.error('Error parsing template')
-    }
+    // if (!doc.valid) {
+    //   this.error('Error parsing template')
+    // }
 
     const html = doc.querySelector('html')
-    if (!html) {
-      this.error('The input template doesn\'t contain the `html` tag')
-    }
+    // if (!html) {
+    //   this.error('The input template doesn\'t contain the `html` tag')
+    // }
 
     const head = getChildElement(html, 'head', false)
     const body = getChildElement(html, 'body')
