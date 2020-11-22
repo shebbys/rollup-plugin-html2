@@ -1,41 +1,42 @@
 {
-  "name": "rollup-plugin-html2",
-  "version": "2.0.0",
-  "description": "Rollup plugin to zip up emitted files.",
-  "homepage": "https://mentaljam.github.io/rollup-plugin-html2",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://github.com/mentaljam/rollup-plugin-html2"
+  "_from": "rollup-plugin-html2",
+  "_id": "rollup-plugin-html2@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-WnWHs9qmokcslrDEP0DmhRJbtP2Srq09CHXcUwkhS1APLWR45IveXJXHF8L3sMRRtnOg3QWizxn3TOM1Y7Qmig==",
+  "_location": "/rollup-plugin-html2",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "rollup-plugin-html2",
+    "name": "rollup-plugin-html2",
+    "escapedName": "rollup-plugin-html2",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/rollup-plugin-html2/-/rollup-plugin-html2-2.0.0.tgz",
+  "_shasum": "98b37d8b227d197691ae213267aa8fc6bfeea6f9",
+  "_spec": "rollup-plugin-html2",
+  "_where": "/Users/scottshebby/Startups/Chomper/builds/tazer/login",
+  "author": {
+    "name": "Petr Tsymbarovich",
+    "email": "petr@tsymbarovich.ru"
   },
   "bugs": {
     "url": "https://github.com/mentaljam/rollup-plugin-html2/issues"
   },
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
-  ],
-  "scripts": {
-    "prebuild": "pnpm run lint",
-    "build": "rollup -c",
-    "docs": "npx typedoc src/types.ts && npx gh-pages -d docs",
-    "lint": "eslint src/*.ts -f visualstudio",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "rollup",
-    "plugin",
-    "html"
-  ],
-  "author": "Petr Tsymbarovich <petr@tsymbarovich.ru>",
-  "license": "MIT",
+  "bundleDependencies": false,
   "dependencies": {
     "html-minifier": "^4.0.0",
     "node-html-parser": "^1.2.20"
   },
+  "deprecated": false,
+  "description": "Rollup plugin to zip up emitted files.",
   "devDependencies": {
     "@rollup/plugin-typescript": "^5.0.2",
     "@types/html-minifier": "^4.0.0",
@@ -46,8 +47,36 @@
     "rollup": "^2.23.0",
     "typescript": "^3.9.7"
   },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "homepage": "https://mentaljam.github.io/rollup-plugin-html2",
+  "keywords": [
+    "rollup",
+    "plugin",
+    "html"
+  ],
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "name": "rollup-plugin-html2",
   "peerDependencies": {
     "@types/html-minifier": "^3.5.3",
     "rollup": ">=2.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mentaljam/rollup-plugin-html2.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "docs": "npx typedoc src/types.ts && npx gh-pages -d docs",
+    "lint": "eslint src/*.ts -f visualstudio",
+    "prebuild": "pnpm run lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "dist/index.d.ts",
+  "version": "2.0.0"
 }
